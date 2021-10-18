@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css" />
+    <!-- Boxicons CDN LINK -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxl-c-plus-plus'></i>
+                <div class="logo_name">CodingLab</div>
+            </div>
+            <i class='bx bx-menu' id="sidebar_icon"></i>
+        </div>
+        <div class="sidebar_body">
+        <div class=box-search>
+                
+            <i class='bx bx-search'></i>
+            <input type="text" placeholder="Search..." />
+        
+        </div>
+        <ul class="nav_list">
+           
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+                
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user'></i>
+                    <span class="link_name">User</span>
+                </a>
+                
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                    <span class="link_name">Messages</span>
+                </a>
+               
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="link_name">Analytics</span>
+                </a>
+                
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-folder'></i>
+                    <span class="link_name">File Manager</span>
+                </a>
+                
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="link_name">Order</span>
+                </a>
+               
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-heart'></i>
+                    <span class="link_name">Saved</span>
+                </a>
+               
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="link_name">Setting</span>
+                </a>
+                
+            </li>
+        </ul>
+        </div>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="https://i.picsum.photos/id/177/45/45.jpg?hmac=SZmh9CpPkXYXvLccTlRiBsufg3ooz0l1Jvv7W5sz_Co" />
+                    <div class="profile_name_role">
+                        <div class="name">Anderson Murilo</div>
+                        <div class="role">Analista de Sistemas</div>
+                    </div>
+                    
+                </div>
+                <i class="bx bx-log-out" id="sidebar_logout"></i> 
+            </div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <h1>Documento</h1>
+    </div>
+    <script>
+        let btn = document.querySelector("#sidebar_icon");
+        let sidebar = document.querySelector(".sidebar");
+        btn.onclick = ()=>{
+            sidebar.classList.toggle("active");
+        }
+
+    </script>
+</body>
+</html>
